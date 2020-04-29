@@ -10,7 +10,7 @@ public class Test {
 
     @RequestMapping("/name/{name}")
     public String test(@PathVariable String name){
-        return "你好"+name;
+        return "你好"+name+",么么哒";
     }
 
 }
