@@ -29,7 +29,7 @@ public class Test03 {
         // 轮询权重算法
         // 1.初始化
         if(0 == map.size()){
-            ipsConfigMap.forEach((k, v) -> map.put(k, new Weight(k, v, 0)));
+            ipsConfigMap.forEach((k, v) -> map.put(k, new Weight(k, v, v)));
         }
         // 2.找到最大的
         Weight maxWeight = null;

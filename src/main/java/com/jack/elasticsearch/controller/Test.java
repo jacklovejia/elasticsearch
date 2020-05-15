@@ -55,6 +55,12 @@ public class Test implements BeanFactoryAware , BeanNameAware, BeanPostProcessor
         log.info("当前线程ID:"+thread.getId()+","+thread.toString());
         return "你好"+name+",么么哒";
     }
+    @RequestMapping("/cpu")
+    public void testCpu(){
+        while (true){
+
+        }
+    }
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
